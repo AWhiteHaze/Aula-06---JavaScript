@@ -1,0 +1,36 @@
+body{
+    background-color: #c2bcbcad;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 40PX
+}
+.container2{
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-left: 330px;
+    
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .radio-group, .turno-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .up{
+    
+    justify-content: center;
+    align-items: center;
+
+  }
+    
