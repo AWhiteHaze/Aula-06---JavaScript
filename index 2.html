@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="func2.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>inscrição</title>
+</head>
+<body>
+
+<div class="container">
+    
+ <div class="esquerda">
+
+    <h1>Olá, preencha seus dados para realizar sua inscrição</h1>
+
+    <label for="name">Nome Completo*</label>
+    
+    <input type="name" onclick="nome()"> 
+ 
+    <label for="email">Email*</label>      
+    <input type="email" placeholder="email.@gmail.com" onclick="email()">  
+
+    <label for="date">Data de Nascimento*</label>
+    <input type="datetime" onclick="datanasc()">
+
+    <label for="number">Celular Pricipal*</label> 
+    <input type="number" onclick="cellp()"> 
+
+    <label for="number">Telefone Residencial*</label> 
+
+    <input type="number" onclick="telefoners()"> 
+  
+
+    <div class="radio-group">
+    <label for="genero">Genero:</label>
+    <label for="masculino">Masculino</label>
+    <input type="radio" name="genero" id="m">
+    <label for="feminino">Feminino</label>
+    <input type="radio" name="genero" id="f">
+    
+</div> 
+
+<div class="up">
+<!--ingresso-->
+
+      <label for="ingresso">Formas de ingressso*</label>
+      <select name="ingresso" id="ingresso">
+        <option value="1">Selecione</option>
+        <option value="2">Vestibular</option>
+        <option value="3">Enem</option>
+        <option value="4">Transferência</option>
+    </select>
+
+<!--Curso-->
+
+    <label for="ingresso">Cursos*</label>
+      <select name="ingresso" id="curso" >
+        <option value="1">Selecione</option>
+        <option value="2">Ciencia da computação</option>
+        <option value="3">Cibersegurança</option>
+        <option value="4">Desenvolvimento de sistemas</option>
+    </select>
+
+<!--Habilitação-->
+
+    <label for="habilitacao">Habilitação*</label>
+      <select name="habilitacao" id="habilitacao">
+        <option value="1">Selecione</option>
+        <option value="2">ACC</option>
+        <option value="3">A</option>
+        <option value="4">B</option>
+    </select>
+
+<!--Turma-->
+
+    <label for="ingresso">Turma*</label>
+      <select name="ingresso" id="turma">
+        <option value="1">Selecione</option>
+        <option value="2">Turma Alfa</option>
+        <option value="3">Turma Gama</option>
+        <option value="4">Turma Beta</option>
+    </select>
+</div>
+</div>
+
+<!--Tipo de realização  da prova-->
+
+    <label for="dsrp">Como deseja realizar a prova*</label>
+    <div class="radio-group">
+    <label for="presencial">Presencial</label>
+    <input type="radio" name="presencial" id="p">
+    <label for="online">Online</label>
+    <input type="radio" name="presencial" id="on">  
+</div>
+
+<div class="direita">
+<!--Cupom desconto-->
+
+     <label for="cupom">Possui algum cupom de desconto?</label>
+     <input type="text" name="cupom" id="desconto">
+     <input type="button" value="Inserir cupom">
+
+<!--Data prova-->
+
+     <label for="datap">Data[Prova]</label>
+     <Select>
+        <option value="1"></option>
+        <option value="2">12/05/2025</option>
+        <option value="3">13/05/2025</option>
+        <option value="4">14/05/2025</option>
+     </Select>
+     
+
+<!--Horário da  prova-->
+
+     <label for="hprova">Horário[Prova]</label>
+     <Select>
+        <option value="1"></option>
+        <option value="2">13:00:00</option>
+        <option value="3">07:30:00</option>
+        <option value="4">14:00:00</option>
+     </Select>
+
+<!--Local da prova-->
+
+     <label for="localp">Local da prova*</label>
+     <Select>
+        <option value="1"></option>
+        <option value="2">USP/URFRJ</option>
+        <option value="3">IFSP</option>
+        <option value="4">Online/option>
+     </Select>
+
+<!-- CPF -->
+
+ <label for="cpf">CPF</label>
+    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+
+<!-- RG -->
+
+    <label for="rg">RG</label>
+    <input type="text" id="rg" name="rg" placeholder="00.000.000-0">
+
+<!-- Nacionalidade -->
+
+    <label for="nacionalidade">Nacionalidade</label>
+    <input type="text" id="nacionalidade" name="nacionalidade" >
+
+<!-- CEP -->
+
+    <label for="cep">CEP</label>
+    <input type="text" id="cep" name="cep" placeholder="00000-000">
+
+<!-- Endereço -->
+
+    <label for="endereco">Endereço</label>
+    <input type="text" id="endereco" name="endereco" placeholder="Rua, Avenida, etc.">
+
+<!-- N* -->
+
+    <label for="numero">Número</label>
+    <input type="text" id="numero" name="numero" placeholder="Número da casa, apartamento, etc.">
+
+<!-- Complemento -->
+
+    <label for="complemento">Complemento</label>
+    <input type="text" id="complemento" name="complemento" placeholder="Complemento, se houver">
+
+<!-- Bairro -->
+
+    <label for="bairro">Bairro</label>
+    <input type="text" id="bairro" name="bairro" placeholder="Bairro">
+
+<!-- Cidade -->
+
+    <label for="cidade">Cidade</label>
+    <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+
+<label for="nomesocial">Utilizar nome social?*</label>
+<input type="radio" name="nomesocial" id="n">Não
+<input type="radio" name="nomesocial" id="s">Sim
+
+<label for="nomesocial">Necessidades especiais*</label>
+<input type="radio" name="necessidades" id="n">Não
+<input type="radio" name="necessidades" id="s">Sim
+
+     <label for="comcluir"></label>
+     <input type="button" class="button" value="Concluir">
+ </div>
+ 
+</div>
+</body>
+</html>
